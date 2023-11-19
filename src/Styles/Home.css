@@ -1,0 +1,313 @@
+.home_h_t:hover{
+  cursor: pointer;
+  color:green;
+}
+
+#logo_text:hover{
+  cursor: pointer;
+  color: #fff;
+}
+#logo_text{
+  color: green;
+}
+/* Animated-NAME-Slider-HOVER-EFFECT-----------
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: GREEN;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+
+  
+  /* animated txt */
+  .clr_text{
+    /* background: url(); */
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .animate-charcter
+{ margin-right: 30%;
+  margin-top: 20%;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* -----Dot animation-------- */
+
+.three-body {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: #5D3FD3;
+  position: relative;
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+ }
+ 
+ .three-body__dot {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+ }
+ 
+ .three-body__dot:after {
+  content: '';
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: var(--uib-color);
+  border-radius: 50%;
+ }
+ 
+ .three-body__dot:nth-child(1) {
+  bottom: 5%;
+  left: 0;
+  transform: rotate(60deg);
+  transform-origin: 50% 85%;
+ }
+ 
+ .three-body__dot:nth-child(1)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite ease-in-out;
+  animation-delay: calc(var(--uib-speed) * -0.3);
+ }
+ 
+ .three-body__dot:nth-child(2) {
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: 50% 85%;
+ }
+ 
+ .three-body__dot:nth-child(2)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite
+     calc(var(--uib-speed) * -0.15) ease-in-out;
+ }
+ 
+ .three-body__dot:nth-child(3) {
+  bottom: -5%;
+  left: 0;
+  transform: translateX(116.666%);
+ }
+ 
+ .three-body__dot:nth-child(3)::after {
+  top: 0;
+  left: 0;
+  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+ }
+ 
+ @keyframes spin78236 {
+  0% {
+   transform: rotate(0deg);
+  }
+ 
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes wobble1 {
+  0%,
+   100% {
+   transform: translateY(0%) scale(1);
+   opacity: 1;
+  }
+ 
+  50% {
+   transform: translateY(-66%) scale(0.65);
+   opacity: 0.8;
+  }
+ }
+ 
+ @keyframes wobble2 {
+  0%,
+   100% {
+   transform: translateY(0%) scale(1);
+   opacity: 1;
+  }
+ 
+  50% {
+   transform: translateY(66%) scale(0.65);
+   opacity: 0.8;
+  }
+ }
+ 
+
+ /* ----Home Images------------ */
+
+
+.text{
+    margin-top: 24rem;
+    width: 62rem;
+    margin-left:5%; 
+}
+.text h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.text h1 b{
+    font-size: 100px;
+}
+.btn{
+    width: 200px;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 390px){ 
+    .text{
+        margin-top:2rem;
+        width: 10rem;
+        margin-left:2%; 
+    }
+    .text h1{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .text h1 b{
+        font-size: 20px;
+    }
+    .btn{
+        width: 90px;
+        margin-top: 0px;
+        font-size: 10px;
+        height: 25px;
+    }
+}
+#About_con{
+    margin-top: 2rem;
+}
+.row .col-6{
+    margin-top: 15rem;
+}
+.row .col-6 p{
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+    color: gray;
+    line-height: 35px;
+}
+#About_con button{
+    height: 40px;
+    width: 150px;
+}
+.row .col img{
+    width: 130%;
+    height: 100%;
+}
+#row .card{
+    width: 23rem;
+    margin: 3.5rem 0 ;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 178);   
+    list-style: none;
+}
+.box p{
+    width: auto;
+    color: gray;
+}
+#row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tick{
+   font-weight: 500;
+   margin-top: 20px;
+}
+.total_cards .card{
+    border-radius: 30px;
+    opacity: 0.8;
+    width: 23rem;
+}
+.circle-1{
+}
+.row{
+    position: relative;
+}
+.book-1{
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(-0.10turn);
+    margin-top: 8rem;
+}
+.book-2{
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(-0.9turn);
+    margin-left: 38rem;
+    margin-top: 4rem;
+}
+#Global {
+    position: relative;
+}
+#Global h1{
+    position: relative;
+}
+

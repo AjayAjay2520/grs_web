@@ -1,0 +1,29 @@
+.logo:hover{
+  cursor: pointer;
+}
+.nav_top {
+    color: white;
+    text-decoration: none;    
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav_top::before {
+    margin-left: auto;
+  }
+  
+  .nav_top::after, .nav_top::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #42ff1c;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .nav_top:hover::after, .nav_top:hover::before {
+    width: 100%;
+  }
+  

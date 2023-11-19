@@ -1,0 +1,201 @@
+.group {
+    position: relative;
+  }
+  
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* padding: 120px 40px; */
+    padding-top: 60px;
+    /* padding-bottom: 90px;
+    padding-right: 40px;*/
+    /* padding-left: 40px;  */
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .form p {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: white;
+  }
+  
+  .container-1 {
+    padding-top: 30px;
+  }
+  
+  .main-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20rem;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .main-input:focus {
+    outline: none;
+    border-bottom-color: #42ff1c;
+  }
+  
+  .lebal-email {
+    color: #999999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .main-input:focus ~ .lebal-email,
+  .main-input:valid ~ .lebal-email {
+    top: -20px;
+    font-size: 14px;
+    color: #42ff1c;
+  }
+  
+  .highlight-span {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .main-input:focus ~ .highlight-span {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+  }
+  
+  @keyframes input-focus {
+    from {
+      background: #42ff1c;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  /* .submit:hover{
+    background: #42ff1c;
+  } 
+  .frm_submit a{
+    text-decoration: none;
+    color: #42ff1c;
+  }
+  .submit {
+    margin-top: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+  } */
+
+  /* ----------Submit Button------------- */
+  .sub_btn {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    background: #42ff1c;
+    color: black;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .sub_btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sub_btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sub_btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .sub_btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .sub_btn:hover span {
+    transform: translateX(5em);
+  }
+  
+  .sub_btn:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+
+
+  /* Additional styles for dropdown */
+.main-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20rem;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+}
+
+/* Additional styles for textarea */
+.main-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20rem;
+    border: 1px solid #6c6c6c; /* Add a border for the textarea */
+    background: transparent;
+    color: #ffffff;
+    resize: none; /* Prevent textarea resizing */
+}
+
+.main-input:focus {
+    outline: none;
+    border-bottom-color: #42ff1c;
+}
+
+/* Rest of your existing styles remain unchanged */

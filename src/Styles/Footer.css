@@ -1,0 +1,32 @@
+.sm_icons .b_icons a{
+    text-decoration: none;
+    color: gray;
+    padding: 1rem;
+    font-size: 25px;
+}
+.sm_icons .facebook:hover{
+    color: blue;
+}
+.sm_icons .Linkedin:hover{
+    color: rgb(71, 172, 240);
+}
+.sm_icons .whatsapp:hover{
+    color: greenyellow;
+}
+.sm_icons .twitter:hover{
+    color: skyblue;
+}
+.sm_icons .condition a{
+    color: gray;
+    padding: 1rem;
+
+}
+.terms a{
+  
+    color: gray;
+
+}
+.terms a:hover{
+    color: #fff;
+
+}
